@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" onmouseup="return stop();" onmousemove="return drag(evt);" width="400" height="250">
+	<title>Pool Table</title>
+	<rect id="table" x="0" y="0" width="400" height="250" fill="mediumseagreen"/>
+	<circle r="20" cx="157" cy="95" fill="darkslategrey" onmousedown="return start(evt);"/>
+	<circle r="20" cx="77" cy="52" fill="ivory" onmousedown="return start(evt);"/>
+	<circle r="20" cx="175" cy="177" fill="red" onmousedown="return start(evt);"/>
+	<circle r="20" cx="271" cy="109" fill="blue" onmousedown="return start(evt);"/>
+	<script type="text/ecmascript"><![CDATA[
+	var dragged = null;
+	function distance(circle1,circle2,newX2,newY2) {
+		var dx = (newX2 == undefined ? circle2.getAttribute("cx") : newX2) - circle1.getAttribute("cx");
+		var dy = (newY2 == undefined ? circle2.getAttribute("cy") : newY2) - circle1.getAttribute("cy");
+		var d = Math.sqrt(dx * dx + dy * dy) - circle1.getAttribute("r") - circle2.getAttribute("r");
+		return d;
+	}
+	function move(svgObject,toX,toY) {
+		var circleElements = document.getElementById("table").parentNode.getElementsByTagName("circle");
+		for (var circleIndex = 0; circleIndex < circleElements.length; circleIndex++) {
+			var circleElement = circleElements[circleIndex];
+			if (svgObject == circleElement) {
+				continue;
+			}
+			if (distance(circleElement, svgObject, toX, toY) < 0) {
+				return;
+			}
+		}
+		//
+		var r = svgObject.getAttribute("r");
+		var box = document.getElementById("table");
+		var boxX = box.getAttribute("x");
+		var boxY = box.getAttribute("y");
+		var boxWidth = box.getAttribute("width");
+		var boxHeight = box.getAttribute("height");
+		if (toX < boxX + r) { return; }
+		if (toY < boxY + r) { return; }
+		if (toX > boxX + boxWidth - r) { return; }
+		if (toY > boxY + boxHeight - r) { return; }
+		svgObject.setAttribute("cx",toX);
+		svgObject.setAttribute("cy",toY);
+	}
+	function start(evt) {
+		dragged = evt.target;
+		return false; // same as evt.preventDefault(); evt.stopPropagation();
+	}
+	function stop() {
+		dragged = null;
+		return false;
+	}
+	function drag(evt) {
+		if (dragged == null) {
+			return true;
+		}
+		move(dragged,evt.clientX,evt.clientY);
+		return false;
+	}
+	//]]></script>
+</svg>
