@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-size="12" onmouseup="return stop();" onmousemove="return drag(evt);" width="500" height="350">
 	<title>Pool Table</title>
-	<!-- Idea and first implementation - Leo Baschy <srguiwiz12 AT nrvr DOT com> -->
+	<!-- Idea and first implementation - Leo Baschy <srguiwiz12 AT nrvr DOT com> and Hans Baschy -->
 	<rect id="table" x="0" y="0" width="400" height="250" fill="mediumseagreen"/>
 	<circle r="20" cx="157" cy="95" fill="darkslategrey" onmousedown="return start(evt);"/>
 	<circle r="20" cx="77" cy="52" fill="ivory" onmousedown="return start(evt);"/>
