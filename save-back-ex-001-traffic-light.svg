@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-size="12">
 	<title>Traffic Light</title>
+	<!-- Idea and first implementation - Leo Baschy <srguiwiz12 AT nrvr DOT com> -->
 	<rect x="0" y="0" width="60" height="160" fill="gray"/>
 	<circle r="20" cx="30" cy="30" fill="#f00" opacity="0.2" onclick="return click(evt);"/>
 	<circle r="20" cx="30" cy="80" fill="#ff0" opacity="0.2" onclick="return click(evt);"/>
 	<circle r="20" cx="30" cy="130" fill="#0f0" opacity="1.0" onclick="return click(evt);"/>
+	<text x="70" y="20">store on (save to) your local file system (disk) and open from there to try out</text>
+	<text x="70" y="45">
+		<a xlink:href="https://addons.mozilla.org/en-US/firefox/addon/save-back-to-file-from-dom/" style="fill:blue">https://addons.mozilla.org/en-US/firefox/addon/save-back-to-file-from-dom/</a>
+	</text>
+	<text x="70" y="70">click lights in traffic light, then
+	<a xlink:href="https://addons.mozilla.org/en-US/firefox/addon/save-back-to-file-from-dom/" style="fill:blue">save back to file</a></text>
 	<script type="text/ecmascript"><![CDATA[
 	function switchOpacity(svgObject) {
 		var opacity = svgObject.getAttribute('opacity');
