@@ -1,6 +1,11 @@
-﻿be sure to store as UTF-8 or other Unicode
+﻿---------------------------
 
+be sure to store as UTF-8 or other Unicode
 
+---------------------------
+
+supposed to be built at
+https://builder.addons.mozilla.org/package/89889/latest/
 
 ---------------------------
 
