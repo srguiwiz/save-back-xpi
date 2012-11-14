@@ -20,8 +20,6 @@ Provides an item in the context menu only if file URI scheme.
 Provides an option to limit operation to URIs matching a regular expression, to avoid unintended saves.
 Provides info in Error Console, if you care to look there.
 
-Initially tested with Firefox 13 in Windows. Then, just so it also runs with Firefox 10 in Linux, downgraded to Addon Kit 1.5, from 1.7. One may hope that keeping compatibility will be easy.
-
 
 
 ---------------------------
