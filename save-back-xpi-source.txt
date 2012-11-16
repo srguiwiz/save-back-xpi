@@ -267,7 +267,7 @@ exports.main = function() {
 
 
 
-A couple nice SVG example files to try out with linked from http://www.nrvr.com/open/xpis/save-back-xpi/save-back-examples.html
+A couple nice SVG example files to try out with linked from http://srguiwiz.github.com/save-back-xpi/save-back-examples.html
 
 Designed specifically for use with https://github.com/srguiwiz/adj-js
-as illustrated http://www.nrvr.com/open/adj/adj-js/user-docs/#example-workflow
+as illustrated http://srguiwiz.github.com/adj-js/user-docs/#example-workflow
