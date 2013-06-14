@@ -52,7 +52,7 @@ Provides info in Error Console, if you care to look there.
 
 
 //
-// Copyright (c) 2012, Nirvana Research
+// Copyright (c) 2012-2013, Nirvana Research
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -148,7 +148,7 @@ exports.main = function() {
             return;
         }
         //
-        var workers = require("content/worker");
+        var workers = require("sdk/content/worker");
         var serialized = null;
         let worker = workers.Worker({
             window: require("window-utils").activeWindow,
