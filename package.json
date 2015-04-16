@@ -1,0 +1,29 @@
+{
+"name":"save-back-to-file-from-dom",
+"fullName":"Save Back to File from DOM",
+
+"title": "Save Back to File from DOM",
+"id": "jid0-m03zqB9pPBB1nZal9bhWylahAog@jetpack",
+"description": "Save back a file URI scheme document, but save from DOM, which means it would save changes effected by JavaScript.",
+"author": "srguiwiz",
+"license": "BSD",
+"version": "1.0.25",
+
+"main": "main",
+
+"preferences":[{
+    "name":"onlyIfURIMatchesRegEx",
+    "title":"Only If URI Matches Regular Expression",
+    "description":"Only if URI matches regular expression. Default is ^file://.*$. Note: It cannot get around hard file URI scheme limitation.",
+    "type":"string",
+    "value":"^file://.*$"
+  },
+  {
+    "name":"showWidget",
+    "title":"Show Icon",
+    "description":"Whether to show the icon in the Add-on Bar.",
+    "type":"bool",
+    "value":true
+  }]
+}
+
