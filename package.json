@@ -19,7 +19,7 @@
     "value":"^file://.*$"
   },
   {
-    "name":"showWidget",
+    "name":"showActionButton",
     "title":"Show Icon",
     "description":"Whether to show the icon in the Add-on Bar.",
     "type":"bool",
