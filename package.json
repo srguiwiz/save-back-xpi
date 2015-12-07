@@ -7,7 +7,7 @@
 "description": "Save back a file URI scheme document, but save from DOM, which means it would save changes effected by JavaScript.",
 "author": "srguiwiz",
 "license": "BSD",
-"version": "1.0.27",
+"version": "1.0.28",
 
 "main": "main",
 
