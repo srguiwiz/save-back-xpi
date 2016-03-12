@@ -7,7 +7,7 @@
 "description": "Save back a file URI scheme document, but save from DOM, which means it would save changes effected by JavaScript.",
 "author": "srguiwiz",
 "license": "BSD",
-"version": "1.0.28",
+"version": "1.0.29",
 
 "main": "main",
 
@@ -22,6 +22,13 @@
     "name":"showActionButton",
     "title":"Show Icon",
     "description":"Whether to show the icon in the Add-on Bar.",
+    "type":"bool",
+    "value":true
+  },
+  {
+    "name":"showConfirmationDialog",
+    "title":"Ask For Confirmation",
+    "description":"Whether to show the confirmation dialog.",
     "type":"bool",
     "value":true
   }]
