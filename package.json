@@ -1,15 +1,25 @@
 {
 "name":"save-back-to-file-from-dom",
-"fullName":"Save Back to File from DOM",
 
 "title": "Save Back to File from DOM",
+
 "id": "jid0-m03zqB9pPBB1nZal9bhWylahAog@jetpack",
+
 "description": "Save back a file URI scheme document, but save from DOM, which means it would save changes effected by JavaScript.",
+
+"icon": "resource://@save-back-to-file-from-dom/data/savebacktofile32.png",
+
 "author": "srguiwiz",
+
 "license": "BSD",
+
 "version": "1.1.0",
 
-"main": "main",
+"engines": {
+    "firefox": ">=38.0a1"
+},
+
+"main": "lib/main.js",
 
 "preferences":[{
     "name":"onlyIfURIMatchesRegEx",

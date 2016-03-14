@@ -15,5 +15,5 @@ as illustrated http://srguiwiz.github.com/adj-js/user-docs/#example-workflow
 Built version ready to install from
 https://addons.mozilla.org/en-US/firefox/addon/save-back-to-file-from-dom/
 
-Build with a local https://developer.mozilla.org/en-US/Add-ons/SDK/Builder
+Build with a local https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm
 

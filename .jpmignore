@@ -1,0 +1,22 @@
+# per https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpmignore
+# ignore all
+.*
+*.xpi
+*.svg
+*.html
+*.png
+/test/**
+/.git/**
+.git*
+*
+# allow only those specifically set not to be ignored
+!/data/save*.png
+!/lib/main.js
+#!/locale/**
+!/package.json
+#!/icon.png
+#!/icon64.png
+#!/bootstrap.js
+#!/install.rdf
+!/README.txt
+
