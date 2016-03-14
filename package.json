@@ -7,7 +7,7 @@
 "description": "Save back a file URI scheme document, but save from DOM, which means it would save changes effected by JavaScript.",
 "author": "srguiwiz",
 "license": "BSD",
-"version": "1.0.29",
+"version": "1.1.0",
 
 "main": "main",
 
@@ -20,17 +20,37 @@
   },
   {
     "name":"showActionButton",
-    "title":"Show Icon",
-    "description":"Whether to show the icon in the Add-on Bar.",
+    "title":"Show Save Back Icon",
+    "description":"Whether to show Save Back to File icon in the Add-on Bar.",
     "type":"bool",
     "value":true
   },
   {
     "name":"showConfirmationDialog",
-    "title":"Ask For Confirmation",
-    "description":"Whether to show the confirmation dialog.",
+    "title":"Ask For Confirmation For Save Back",
+    "description":"Whether to show confirmation dialog for Save Back to File.",
     "type":"bool",
     "value":true
+  },{
+    "name":"resultNameSuffix",
+    "title":"Result Name Suffix",
+    "description":"What to append to filename when doing Save to Result. Default is -result. Expression utc() fills in UTC.",
+    "type":"string",
+    "value":"-result"
+  },
+  {
+    "name":"showActionButton2",
+    "title":"Show Save Result Icon",
+    "description":"Whether to show Save to Result File icon in the Add-on Bar.",
+    "type":"bool",
+    "value":true
+  },
+  {
+    "name":"showConfirmationDialog2",
+    "title":"Ask For Confirmation For Save Result",
+    "description":"Whether to show confirmation dialog for Save to Result File.",
+    "type":"bool",
+    "value":false
   }]
 }
 
