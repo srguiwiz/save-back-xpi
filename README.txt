@@ -17,3 +17,5 @@ https://addons.mozilla.org/en-US/firefox/addon/save-back-to-file-from-dom/
 
 Build with a local https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm
 
+For Firefox 57 and newer, now replaced by
+https://addons.mozilla.org/en-US/firefox/addon/download-serialized-dom/
